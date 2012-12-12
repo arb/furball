@@ -1,9 +1,9 @@
 {
-  "name": "furballs",
+  "name": "*furballs",
   "description": "Stimpy common plugin utilities",
   "version": "0.0.1",
   "author": "Mobile Services",
-  "private": true,
+  "private": false,
   "main": "index",
   "engines": {
     "node": ">=0.8.0"
