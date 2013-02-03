@@ -14,6 +14,7 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
+    "hoek": "0.x.x"
   },
   "devDependencies": {
     "hapi": "0.13.x",
@@ -22,11 +23,11 @@
   },
   "scripts": {
     "test": "make test && make unit"
-  }
+  },
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/walmartlabs/hapi/raw/master/LICENSE"
+      "url": "http://github.com/walmartlabs/furballs/raw/master/LICENSE"
     }
   ],
   "hapi": {
