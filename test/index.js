@@ -2,7 +2,7 @@
 
 var Chai = require('chai');
 var Hapi = require('hapi');
-var Furballs = process.env.TEST_COV ? require('../lib-cov') : require('../lib');
+var Furball = process.env.TEST_COV ? require('../lib-cov') : require('../lib');
 
 
 // Declare internals
@@ -15,23 +15,23 @@ var internals = {};
 var expect = Chai.expect;
 
 
-describe('Furballs', function () {
+describe('Furball', function () {
 
     // Wrapper is required for coverage
 
     var plugin = {
-        name: 'furballs',
+        name: 'furball',
         version: Hapi.utils.loadPackage().version,
         hapi: {
             plugin: true
         },
-        register: Furballs.register
+        register: Furball.register
     };
 
     it('returns current version', function (done) {
 
         var config = {
-            furballs: {
+            furball: {
                 version: {
                     path: '/VERSION'
                 }
@@ -58,7 +58,7 @@ describe('Furballs', function () {
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/plugins' }, function (res) {
 
-                expect(res.result).to.deep.equal([{ name: 'furballs', version: Hapi.utils.loadPackage().version }]);
+                expect(res.result).to.deep.equal([{ name: 'furball', version: Hapi.utils.loadPackage().version }]);
                 done();
             });
         });
@@ -70,7 +70,7 @@ describe('Furballs', function () {
         server.plugin().register(plugin, function (err) {
 
             expect(err).to.not.exist;
-            expect(server.api.furballs.plugins(server)).to.deep.equal([{ name: 'furballs', version: Hapi.utils.loadPackage().version }]);
+            expect(server.api.furball.plugins(server)).to.deep.equal([{ name: 'furball', version: Hapi.utils.loadPackage().version }]);
             done();
         });
     });
