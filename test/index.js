@@ -30,8 +30,8 @@ describe('Furball', function () {
 
     it('returns current version', function (done) {
 
-        var config = {
-            furball: {
+        var options = {
+            plugin: {
                 version: {
                     path: '/VERSION'
                 }
@@ -39,7 +39,7 @@ describe('Furball', function () {
         };
 
         var server = new Hapi.Server();
-        server.plugin(config).register(plugin, function (err) {
+        server.plugin().register(plugin, options, function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/VERSION' }, function (res) {

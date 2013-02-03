@@ -13,17 +13,15 @@ The main purpose of **furball** is to provide a template for writing other **hap
 
 Both endpints can be disabled or the path customized:
 ```javascript
-var config = {
-    furball: {
-        version: {
-            path: '/VERSION'
-        },
+var options = {
+    plugin: {
+        version: { path: '/VERSION' },
         plugins: false
     }
 };
 
 var server = new Hapi.Server();
-server.plugin(config).register('furball', function (err) { });
+server.plugin().register('furball', options, function (err) { });
 ```
 
 The module also registers the _'plugins()'_ API method:
