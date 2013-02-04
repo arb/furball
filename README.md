@@ -1,5 +1,5 @@
-<a href="/walmartlabs/blammo"><img src="https://raw.github.com/walmartlabs/blammo/master/images/from.png" align="right" /></a>
-![furball Logo](https://raw.github.com/walmartlabs/furball/master/images/furball.png)
+<a href="https://github.com/walmartlabs/blammo"><img src="https://raw.github.com/walmartlabs/blammo/master/images/from.png" align="right" /></a>
+![furball Logo](/images/furball.png)
 
 [**hapi**](https://github.com/walmartlabs/hapi) plugin utilities and endpoints
 
