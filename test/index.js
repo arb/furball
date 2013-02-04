@@ -23,7 +23,7 @@ describe('Furball', function () {
         name: 'furball',
         version: Hapi.utils.loadPackage().version,
         hapi: {
-            plugin: true
+            plugin: '1.x.x'
         },
         register: Furball.register
     };
