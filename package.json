@@ -1,7 +1,7 @@
 {
   "name": "furball",
   "description": "Plugin utilities and endpoints",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "repository": "git://github.com/walmartlabs/furball",
   "main": "index",
@@ -14,10 +14,10 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "hoek": "0.x.x"
+    "hoek": "0.4.x"
   },
   "devDependencies": {
-    "hapi": "0.13.x",
+    "hapi": "0.x.x",
     "mocha": "1.x.x",
     "chai": "1.2.x"
   },
