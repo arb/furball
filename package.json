@@ -1,7 +1,7 @@
 {
   "name": "furball",
   "description": "Plugin utilities and endpoints",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "repository": "git://github.com/walmartlabs/furball",
   "main": "index",

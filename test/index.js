@@ -70,7 +70,7 @@ describe('Furball', function () {
         server.plugin().register(plugin, function (err) {
 
             expect(err).to.not.exist;
-            expect(server.api.furball.plugins(server)).to.deep.equal([{ name: 'furball', version: Hapi.utils.loadPackage().version }]);
+            expect(server.plugins.furball.plugins(server)).to.deep.equal([{ name: 'furball', version: Hapi.utils.loadPackage().version }]);
             done();
         });
     });
