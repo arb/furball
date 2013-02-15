@@ -1,7 +1,7 @@
 {
   "name": "furball",
   "description": "Plugin utilities and endpoints",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "repository": "git://github.com/walmartlabs/furball",
   "main": "index",
@@ -16,6 +16,9 @@
   "dependencies": {
     "hoek": "0.4.x"
   },
+  "peerDependencies": {
+    "compatible": "1.0.0"
+  },
   "devDependencies": {
     "hapi": "0.x.x",
     "mocha": "1.x.x",
@@ -29,8 +32,5 @@
       "type": "BSD",
       "url": "http://github.com/walmartlabs/furball/raw/master/LICENSE"
     }
-  ],
-  "hapi": {
-    "plugin": "1.x.x"
-  }
+  ]
 }
