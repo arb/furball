@@ -2,7 +2,7 @@
 
 var Chai = require('chai');
 var Hapi = require('hapi');
-var Furball = process.env.TEST_COV ? require('../lib-cov') : require('../lib');
+var Furball = require('../lib');
 
 
 // Declare internals
@@ -17,17 +17,6 @@ var expect = Chai.expect;
 
 describe('Furball', function () {
 
-    // Wrapper is required for coverage
-
-    var plugin = {
-        name: 'furball',
-        version: Hapi.utils.loadPackage().version,
-        hapi: {
-            plugin: '1.x.x'
-        },
-        register: Furball.register
-    };
-
     it('returns current version', function (done) {
 
         var options = {
@@ -39,7 +28,7 @@ describe('Furball', function () {
         };
 
         var server = new Hapi.Server();
-        server.plugin().register(plugin, options, function (err) {
+        server.plugin().require('../', options, function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/VERSION' }, function (res) {
@@ -53,7 +42,7 @@ describe('Furball', function () {
     it('returns current plugins', function (done) {
 
         var server = new Hapi.Server();
-        server.plugin().register(plugin, function (err) {
+        server.plugin().require('../', function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/plugins' }, function (res) {
@@ -67,7 +56,7 @@ describe('Furball', function () {
     it('returns current plugins via API', function (done) {
 
         var server = new Hapi.Server();
-        server.plugin().register(plugin, function (err) {
+        server.plugin().require('../', function (err) {
 
             expect(err).to.not.exist;
             expect(server.plugins.furball.plugins(server)).to.deep.equal([{ name: 'furball', version: Hapi.utils.loadPackage().version }]);

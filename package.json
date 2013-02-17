@@ -1,7 +1,7 @@
 {
   "name": "furball",
   "description": "Plugin utilities and endpoints",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "repository": "git://github.com/walmartlabs/furball",
   "main": "index",
@@ -11,21 +11,25 @@
     "plugin"
   ],
   "engines": {
-    "node": ">=0.8.0"
+    "node": "0.8.x"
   },
   "dependencies": {
     "hoek": "0.4.x"
   },
   "peerDependencies": {
-    "compatible": "1.0.0"
+    "hapi": "0.14.x"
   },
   "devDependencies": {
-    "hapi": "0.x.x",
+    "hapi": "0.14.x",
     "mocha": "1.x.x",
-    "chai": "1.2.x"
+    "chai": "1.x.x",
+    "blanket": "1.0.x",
+    "travis-cov": "0.2.x"
   },
   "scripts": {
-    "test": "make test && make unit"
+    "test": "make test && make test-cov",
+    "blanket": { "pattern": "//^((?!\/node_modules\/)(?!\/test\/).)*$/ig", "onlyCwd": true, "data-cover-flags": { "branchTracking": true } },
+    "travis-cov": { "threshold": 100 }
   },
   "licenses": [
     {
