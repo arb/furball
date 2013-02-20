@@ -19,16 +19,8 @@ describe('Furball', function () {
 
     it('returns current version', function (done) {
 
-        var options = {
-            plugin: {
-                version: {
-                    path: '/VERSION'
-                }
-            }
-        };
-
         var server = new Hapi.Server();
-        server.plugin().require('../', options, function (err) {
+        server.plugin().require('../', { version: '/VERSION' }, function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/VERSION' }, function (res) {
