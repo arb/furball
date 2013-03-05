@@ -3,7 +3,7 @@
   "description": "Plugin utilities and endpoints",
   "version": "0.1.0",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
-  "repository": "git://github.com/walmartlabs/furball",
+  "repository": "git://github.com/spumko/furball",
   "main": "index",
   "keywords": [
     "hapi",
@@ -34,7 +34,7 @@
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/walmartlabs/furball/raw/master/LICENSE"
+      "url": "http://github.com/spumko/furball/raw/master/LICENSE"
     }
   ]
 }
