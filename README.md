@@ -1,9 +1,9 @@
-<a href="https://github.com/walmartlabs/blammo"><img src="https://raw.github.com/walmartlabs/blammo/master/images/from.png" align="right" /></a>
-![furball Logo](/images/furball.png)
+<a href="https://github.com/spumko"><img src="https://raw.github.com/spumko/spumko/master/images/from.png" align="right" /></a>
+![furball Logo](https://raw.github.com/spumko/furball/master/images/furball.png)
 
-[**hapi**](https://github.com/walmartlabs/hapi) plugin utilities and endpoints
+[**hapi**](https://github.com/spumko/hapi) plugin utilities and endpoints
 
-[![Build Status](https://secure.travis-ci.org/walmartlabs/furball.png)](http://travis-ci.org/walmartlabs/furball)
+[![Build Status](https://secure.travis-ci.org/spumko/furball.png)](http://travis-ci.org/spumko/furball)
 
 **furball** provides a basic set of endpoints for **hapi**-based servers. Once registered, the plugin adds two endpoints:
 - __/version__ - the version number of the current root module.
@@ -14,10 +14,10 @@ The main purpose of **furball** is to provide a template for writing other **hap
 Both endpints can be disabled or the path customized:
 ```javascript
 var options = {
-    plugin: {
-        version: { path: '/VERSION' },
-        plugins: false
-    }
+plugin: {
+version: { path: '/VERSION' },
+plugins: false
+}
 };
 
 var server = new Hapi.Server();
