@@ -14,10 +14,10 @@ The main purpose of **furball** is to provide a template for writing other **hap
 Both endpints can be disabled or the path customized:
 ```javascript
 var options = {
-plugin: {
-version: { path: '/VERSION' },
-plugins: false
-}
+  plugin: {
+    version: { path: '/VERSION' },
+    plugins: false
+  }
 };
 
 var server = new Hapi.Server();
