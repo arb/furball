@@ -1,7 +1,7 @@
 {
   "name": "furball",
   "description": "Plugin utilities and endpoints",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "repository": "git://github.com/spumko/furball",
   "main": "index",
@@ -11,17 +11,17 @@
     "plugin"
   ],
   "engines": {
-    "node": "0.8.x"
+    "node": "0.10.x"
   },
   "dependencies": {
-    "hoek": "0.7.x"
+    "hoek": "0.8.x"
   },
   "peerDependencies": {
-    "hapi": "0.16.x"
+    "hapi": "1.x.x"
   },
   "devDependencies": {
-    "hapi": "0.16.x",
-    "lab": "0.0.x",
+    "hapi": "1.x.x",
+    "lab": "0.1.x",
     "complexity-report": "0.x.x"
   },
   "scripts": {
