@@ -24,7 +24,7 @@ describe('Furball', function () {
     it('returns current version', function (done) {
 
         var server = new Hapi.Server();
-        server.plugin.require('../', { version: '/VERSION' }, function (err) {
+        server.pack.require('../', { version: '/VERSION' }, function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/VERSION' }, function (res) {
@@ -38,7 +38,7 @@ describe('Furball', function () {
     it('returns current plugins', function (done) {
 
         var server = new Hapi.Server();
-        server.plugin.require('../', function (err) {
+        server.pack.require('../', function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/plugins' }, function (res) {
@@ -52,7 +52,7 @@ describe('Furball', function () {
     it('returns current plugins via API', function (done) {
 
         var server = new Hapi.Server();
-        server.plugin.require('../', function (err) {
+        server.pack.require('../', function (err) {
 
             expect(err).to.not.exist;
             expect(server.plugins.furball.plugins(server)).to.deep.equal([{ name: 'furball', version: Hapi.utils.loadPackage().version }]);
