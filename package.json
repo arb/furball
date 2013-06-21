@@ -1,7 +1,7 @@
 {
   "name": "furball",
   "description": "Plugin utilities and endpoints",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "repository": "git://github.com/spumko/furball",
   "main": "index",
