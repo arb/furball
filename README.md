@@ -26,6 +26,6 @@ server.plugin().register('furball', options, function (err) { });
 
 The module also registers the _'plugins()'_ API method:
 ```javascript
-console.log(server.api.furball.plugins(server));
+console.log(server.plugins.furball.plugins(server));
 ```
 
