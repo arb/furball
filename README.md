@@ -1,6 +1,8 @@
 <a href="https://github.com/spumko"><img src="https://raw.github.com/spumko/spumko/master/images/from.png" align="right" /></a>
 ![furball Logo](https://raw.github.com/spumko/furball/master/images/furball.png)
 
+# No longer being maintained
+
 [**hapi**](https://github.com/spumko/hapi) plugin utilities and endpoints
 
 [![Build Status](https://secure.travis-ci.org/spumko/furball.png)](http://travis-ci.org/spumko/furball)
