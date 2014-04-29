@@ -13,7 +13,7 @@
 
 The main purpose of **furball** is to provide a template for writing other **hapi** plugins.
 
-Both endpints can be disabled or the path customized:
+Both endpoints can be disabled or the path customized:
 ```javascript
 var options = {
   plugin: {
