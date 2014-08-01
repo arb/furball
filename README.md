@@ -1,11 +1,11 @@
-<a href="https://github.com/spumko"><img src="https://raw.github.com/spumko/spumko/master/images/from.png" align="right" /></a>
-![furball Logo](https://raw.github.com/spumko/furball/master/images/furball.png)
+<a href="https://github.com/hapijs"><img src="https://raw.github.com/hapijs/spumko/master/images/from.png" align="right" /></a>
+![furball Logo](https://raw.github.com/hapijs/furball/master/images/furball.png)
 
 # No longer being maintained
 
-[**hapi**](https://github.com/spumko/hapi) plugin utilities and endpoints
+[**hapi**](https://github.com/hapijs/hapi) plugin utilities and endpoints
 
-[![Build Status](https://secure.travis-ci.org/spumko/furball.png)](http://travis-ci.org/spumko/furball)
+[![Build Status](https://secure.travis-ci.org/hapijs/furball.png)](http://travis-ci.org/hapijs/furball)
 
 **furball** provides a basic set of endpoints for **hapi**-based servers. Once registered, the plugin adds two endpoints:
 - __/version__ - the version number of the current root module.
